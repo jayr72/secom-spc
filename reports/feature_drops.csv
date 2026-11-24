@@ -1,0 +1,151 @@
+feature,reason,detail
+S085,missing>50%,90.1% missing
+S109,missing>50%,84.0% missing
+S110,missing>50%,84.0% missing
+S111,missing>50%,84.0% missing
+S157,missing>50%,91.0% missing
+S158,missing>50%,91.0% missing
+S220,missing>50%,90.1% missing
+S244,missing>50%,84.0% missing
+S245,missing>50%,84.0% missing
+S246,missing>50%,84.0% missing
+S292,missing>50%,91.0% missing
+S293,missing>50%,91.0% missing
+S358,missing>50%,90.1% missing
+S382,missing>50%,84.0% missing
+S383,missing>50%,84.0% missing
+S384,missing>50%,84.0% missing
+S492,missing>50%,90.1% missing
+S516,missing>50%,84.0% missing
+S517,missing>50%,84.0% missing
+S518,missing>50%,84.0% missing
+S578,missing>50%,63.5% missing
+S579,missing>50%,63.5% missing
+S580,missing>50%,63.5% missing
+S581,missing>50%,63.5% missing
+S005,constant,1 unique value
+S013,constant,1 unique value
+S042,constant,1 unique value
+S049,constant,1 unique value
+S052,constant,1 unique value
+S069,constant,1 unique value
+S074,constant,1 unique value
+S097,constant,1 unique value
+S141,constant,1 unique value
+S149,constant,1 unique value
+S178,constant,1 unique value
+S179,constant,1 unique value
+S186,constant,1 unique value
+S189,constant,1 unique value
+S190,constant,1 unique value
+S191,constant,1 unique value
+S192,constant,1 unique value
+S193,constant,1 unique value
+S194,constant,1 unique value
+S206,constant,1 unique value
+S209,constant,1 unique value
+S226,constant,1 unique value
+S229,constant,1 unique value
+S230,constant,1 unique value
+S231,constant,1 unique value
+S232,constant,1 unique value
+S233,constant,1 unique value
+S234,constant,1 unique value
+S235,constant,1 unique value
+S236,constant,1 unique value
+S237,constant,1 unique value
+S240,constant,1 unique value
+S241,constant,1 unique value
+S242,constant,1 unique value
+S243,constant,1 unique value
+S256,constant,1 unique value
+S257,constant,1 unique value
+S258,constant,1 unique value
+S259,constant,1 unique value
+S260,constant,1 unique value
+S261,constant,1 unique value
+S262,constant,1 unique value
+S263,constant,1 unique value
+S264,constant,1 unique value
+S265,constant,1 unique value
+S266,constant,1 unique value
+S276,constant,1 unique value
+S284,constant,1 unique value
+S313,constant,1 unique value
+S314,constant,1 unique value
+S315,constant,1 unique value
+S322,constant,1 unique value
+S325,constant,1 unique value
+S326,constant,1 unique value
+S327,constant,1 unique value
+S328,constant,1 unique value
+S329,constant,1 unique value
+S330,constant,1 unique value
+S342,constant,1 unique value
+S347,constant,1 unique value
+S364,constant,1 unique value
+S369,constant,1 unique value
+S370,constant,1 unique value
+S371,constant,1 unique value
+S372,constant,1 unique value
+S373,constant,1 unique value
+S374,constant,1 unique value
+S375,constant,1 unique value
+S378,constant,1 unique value
+S379,constant,1 unique value
+S380,constant,1 unique value
+S381,constant,1 unique value
+S394,constant,1 unique value
+S395,constant,1 unique value
+S396,constant,1 unique value
+S397,constant,1 unique value
+S398,constant,1 unique value
+S399,constant,1 unique value
+S400,constant,1 unique value
+S401,constant,1 unique value
+S402,constant,1 unique value
+S403,constant,1 unique value
+S404,constant,1 unique value
+S414,constant,1 unique value
+S422,constant,1 unique value
+S449,constant,1 unique value
+S450,constant,1 unique value
+S451,constant,1 unique value
+S458,constant,1 unique value
+S461,constant,1 unique value
+S462,constant,1 unique value
+S463,constant,1 unique value
+S464,constant,1 unique value
+S465,constant,1 unique value
+S466,constant,1 unique value
+S478,constant,1 unique value
+S481,constant,1 unique value
+S498,constant,1 unique value
+S501,constant,1 unique value
+S502,constant,1 unique value
+S503,constant,1 unique value
+S504,constant,1 unique value
+S505,constant,1 unique value
+S506,constant,1 unique value
+S507,constant,1 unique value
+S508,constant,1 unique value
+S509,constant,1 unique value
+S512,constant,1 unique value
+S513,constant,1 unique value
+S514,constant,1 unique value
+S515,constant,1 unique value
+S528,constant,1 unique value
+S529,constant,1 unique value
+S530,constant,1 unique value
+S531,constant,1 unique value
+S532,constant,1 unique value
+S533,constant,1 unique value
+S534,constant,1 unique value
+S535,constant,1 unique value
+S536,constant,1 unique value
+S537,constant,1 unique value
+S538,constant,1 unique value
+S114,near-zero-variance,"13 unique, top value 99%"
+S249,near-zero-variance,"13 unique, top value 99%"
+S387,near-zero-variance,"13 unique, top value 99%"
+S521,near-zero-variance,"7 unique, top value 99%"

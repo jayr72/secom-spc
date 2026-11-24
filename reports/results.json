@@ -1,0 +1,573 @@
+{
+  "data": {
+    "units": 1567,
+    "sensors_raw": 590,
+    "fails": 104,
+    "fail_rate": 0.06636885768985322,
+    "start": "2008-07-19 11:55:00",
+    "end": "2008-10-17 06:07:00",
+    "days": 86,
+    "missing_cells_pct": 0.04537548808583821
+  },
+  "screening": {
+    "kept": 440,
+    "dropped_by_reason": {
+      "constant": 122,
+      "missing>50%": 24,
+      "near-zero-variance": 4
+    },
+    "train_units": 1097,
+    "test_units": 470,
+    "train_fails": 78,
+    "test_fails": 26,
+    "train_end": "2008-09-26 03:12:00"
+  },
+  "yield": {
+    "overall_fpy": 0.9336311423101468,
+    "p_bar": 0.06636885768985322,
+    "days_above_ucl": [
+      "2008-07-25",
+      "2008-07-29",
+      "2008-08-10",
+      "2008-08-17",
+      "2008-08-20"
+    ],
+    "days_above_ucl_detail": [
+      {
+        "timestamp": "2008-07-25",
+        "n": "1",
+        "fails": "1",
+        "p": "1.0",
+        "ucl": "0.813"
+      },
+      {
+        "timestamp": "2008-07-29",
+        "n": "12",
+        "fails": "4",
+        "p": "0.333",
+        "ucl": "0.282"
+      },
+      {
+        "timestamp": "2008-08-10",
+        "n": "12",
+        "fails": "5",
+        "p": "0.417",
+        "ucl": "0.282"
+      },
+      {
+        "timestamp": "2008-08-17",
+        "n": "17",
+        "fails": "5",
+        "p": "0.294",
+        "ucl": "0.247"
+      },
+      {
+        "timestamp": "2008-08-20",
+        "n": "28",
+        "fails": "6",
+        "p": "0.214",
+        "ucl": "0.207"
+      }
+    ],
+    "weekly_fpy_min": 0.7692307692307692,
+    "weekly_fpy_min_week": "2008-07-14/2008-07-20",
+    "weekly_fpy_max": 0.9893617021276596
+  },
+  "model": {
+    "best_C": 0.03,
+    "l1_nonzero": 34,
+    "sparse_lr_features": [
+      "S021",
+      "S028",
+      "S059",
+      "S103",
+      "S430",
+      "S431",
+      "S434",
+      "S435",
+      "S436",
+      "S510"
+    ],
+    "test": {
+      "L1_logistic": {
+        "cv_PR_AUC": 0.1525298024427887,
+        "cv_ROC_AUC": 0.7422372361037719,
+        "PR_AUC": 0.09016457110625892,
+        "ROC_AUC": 0.5410602910602911,
+        "recall_fail": 0.23076923076923078,
+        "precision_fail": 0.15789473684210525,
+        "balanced_error_rate": 0.4206514206514207,
+        "threshold": 0.48616600007971467,
+        "flagged": 38,
+        "n": 470,
+        "fails": 26,
+        "prevalence": 0.05531914893617021
+      },
+      "Sparse_LR_top10": {
+        "cv_PR_AUC": 0.14204831250268493,
+        "cv_ROC_AUC": 0.7058076042374374,
+        "PR_AUC": 0.15624390465919105,
+        "ROC_AUC": 0.6537595287595288,
+        "recall_fail": 0.15384615384615385,
+        "precision_fail": 0.12903225806451613,
+        "balanced_error_rate": 0.4534823284823285,
+        "threshold": 0.43540328283661084,
+        "flagged": 31,
+        "n": 470,
+        "fails": 26,
+        "prevalence": 0.05531914893617021
+      },
+      "HistGradientBoosting": {
+        "cv_PR_AUC": 0.2065864640315723,
+        "cv_ROC_AUC": 0.7547495030321332,
+        "PR_AUC": 0.05627681079993618,
+        "ROC_AUC": 0.5143797643797645,
+        "recall_fail": 0.11538461538461539,
+        "precision_fail": 0.0410958904109589,
+        "balanced_error_rate": 0.5211365211365211,
+        "threshold": 0.008775258140677629,
+        "flagged": 73,
+        "n": 470,
+        "fails": 26,
+        "prevalence": 0.05531914893617021
+      },
+      "all_pass_baseline": {
+        "accuracy": 0.9446808510638298,
+        "recall_fail": 0.0,
+        "PR_AUC": 0.05531914893617021
+      }
+    }
+  },
+  "top_features": [
+    {
+      "index": "S059",
+      "rank_mw": 1.0,
+      "rank_l1": 1.0,
+      "rank_shap": 1.0,
+      "mw_auc": 0.756,
+      "mw_q": 0.0,
+      "top15_frequency": 1.0
+    },
+    {
+      "index": "S021",
+      "rank_mw": 15.0,
+      "rank_l1": 4.0,
+      "rank_shap": 12.0,
+      "mw_auc": 0.6133,
+      "mw_q": 0.0264,
+      "top15_frequency": 0.5333
+    },
+    {
+      "index": "S460",
+      "rank_mw": 25.0,
+      "rank_l1": 7.0,
+      "rank_shap": 2.0,
+      "mw_auc": 0.5988,
+      "mw_q": 0.0631,
+      "top15_frequency": 0.4333
+    },
+    {
+      "index": "S129",
+      "rank_mw": 20.0,
+      "rank_l1": 2.0,
+      "rank_shap": 15.0,
+      "mw_auc": 0.6033,
+      "mw_q": 0.0493,
+      "top15_frequency": 0.3
+    },
+    {
+      "index": "S000",
+      "rank_mw": 12.0,
+      "rank_l1": 22.0,
+      "rank_shap": 6.0,
+      "mw_auc": 0.3792,
+      "mw_q": 0.0131,
+      "top15_frequency": 0.5667
+    },
+    {
+      "index": "S033",
+      "rank_mw": 14.0,
+      "rank_l1": 16.0,
+      "rank_shap": 10.0,
+      "mw_auc": 0.615,
+      "mw_q": 0.0219,
+      "top15_frequency": 0.6667
+    },
+    {
+      "index": "S477",
+      "rank_mw": 4.0,
+      "rank_l1": 35.0,
+      "rank_shap": 5.0,
+      "mw_auc": 0.6529,
+      "mw_q": 0.0007,
+      "top15_frequency": 0.8
+    },
+    {
+      "index": "S247",
+      "rank_mw": 2.0,
+      "rank_l1": 35.0,
+      "rank_shap": 20.0,
+      "mw_auc": 0.6721,
+      "mw_q": 0.0005,
+      "top15_frequency": 0.4
+    },
+    {
+      "index": "S333",
+      "rank_mw": 16.0,
+      "rank_l1": 35.0,
+      "rank_shap": 11.0,
+      "mw_auc": 0.6064,
+      "mw_q": 0.046,
+      "top15_frequency": 0.2667
+    },
+    {
+      "index": "S469",
+      "rank_mw": 23.0,
+      "rank_l1": 35.0,
+      "rank_shap": 13.0,
+      "mw_auc": 0.6003,
+      "mw_q": 0.0587,
+      "top15_frequency": 0.1333
+    },
+    {
+      "index": "S341",
+      "rank_mw": 7.0,
+      "rank_l1": 35.0,
+      "rank_shap": 37.0,
+      "mw_auc": 0.6427,
+      "mw_q": 0.0016,
+      "top15_frequency": 0.4667
+    },
+    {
+      "index": "S377",
+      "rank_mw": 22.0,
+      "rank_l1": 35.0,
+      "rank_shap": 24.0,
+      "mw_auc": 0.3975,
+      "mw_q": 0.0493,
+      "top15_frequency": 0.3
+    },
+    {
+      "index": "S425",
+      "rank_mw": 41.0,
+      "rank_l1": 35.0,
+      "rank_shap": 7.0,
+      "mw_auc": 0.587,
+      "mw_q": 0.1112,
+      "top15_frequency": 0.1667
+    },
+    {
+      "index": "S488",
+      "rank_mw": 57.0,
+      "rank_l1": 9.0,
+      "rank_shap": 17.0,
+      "mw_auc": 0.4284,
+      "mw_q": 0.2655,
+      "top15_frequency": 0.3333
+    },
+    {
+      "index": "S519",
+      "rank_mw": 3.0,
+      "rank_l1": 35.0,
+      "rank_shap": 47.0,
+      "mw_auc": 0.6712,
+      "mw_q": 0.0005,
+      "top15_frequency": 0.3667
+    }
+  ],
+  "fdr_significant_q05": 22,
+  "top_driver": {
+    "sensor": "S059",
+    "fail_rate_by_quintile": [
+      {
+        "bin": "(-28.989, -2.503]",
+        "fail_rate": 0.0383,
+        "n": 313
+      },
+      {
+        "bin": "(-2.503, -0.116]",
+        "fail_rate": 0.0225,
+        "n": 311
+      },
+      {
+        "bin": "(-0.116, 2.009]",
+        "fail_rate": 0.0513,
+        "n": 312
+      },
+      {
+        "bin": "(2.009, 5.522]",
+        "fail_rate": 0.0545,
+        "n": 312
+      },
+      {
+        "bin": "(5.522, 168.146]",
+        "fail_rate": 0.1667,
+        "n": 312
+      }
+    ],
+    "monthly": [
+      {
+        "month": "2008-07",
+        "sensor_mean": 12.196,
+        "fail_rate": 0.2222,
+        "n": 63
+      },
+      {
+        "month": "2008-08",
+        "sensor_mean": 7.141,
+        "fail_rate": 0.0919,
+        "n": 555
+      },
+      {
+        "month": "2008-09",
+        "sensor_mean": 0.189,
+        "fail_rate": 0.0288,
+        "n": 590
+      },
+      {
+        "month": "2008-10",
+        "sensor_mean": -0.587,
+        "fail_rate": 0.0613,
+        "n": 359
+      }
+    ]
+  },
+  "chart_sensors": {
+    "predictors": [
+      "S059",
+      "S021",
+      "S460",
+      "S129"
+    ],
+    "controls": [
+      "S482",
+      "S223"
+    ]
+  },
+  "capability": [
+    {
+      "sensor": "S059",
+      "role": "predictor",
+      "LSL_proxy": -19.085,
+      "USL_proxy": 36.004,
+      "n": 1090,
+      "mean": 0.104,
+      "sigma_within": 3.265,
+      "sigma_overall": 3.973,
+      "Cp": 2.812,
+      "Cpk": 1.959,
+      "Pp": 2.311,
+      "Ppk": 1.61,
+      "Cp_pct": 1.555,
+      "Cpk_pct": 1.448,
+      "AD_stat": 8.597,
+      "normal_AD_5pct": false,
+      "Cpk_pm4sigma_spec": 3.397,
+      "Ppk_pm4sigma_spec": 2.792,
+      "in_control": false,
+      "Pp_vs_unchanged_ref": 2.692,
+      "AIAG_band_proxy_specs": "acceptable (1.33-1.67)"
+    },
+    {
+      "sensor": "S021",
+      "role": "predictor",
+      "LSL_proxy": -6883.404,
+      "USL_proxy": -1954.399,
+      "n": 1096,
+      "mean": -5609.311,
+      "sigma_within": 361.931,
+      "sigma_overall": 478.745,
+      "Cp": 2.27,
+      "Cpk": 1.173,
+      "Pp": 1.716,
+      "Ppk": 0.887,
+      "Cp_pct": 1.213,
+      "Cpk_pct": 1.047,
+      "AD_stat": 48.839,
+      "normal_AD_5pct": false,
+      "Cpk_pm4sigma_spec": 2.221,
+      "Ppk_pm4sigma_spec": 1.679,
+      "in_control": false,
+      "Pp_vs_unchanged_ref": 1.998,
+      "AIAG_band_proxy_specs": "marginal (1.00-1.33)"
+    },
+    {
+      "sensor": "S460",
+      "role": "predictor",
+      "LSL_proxy": 9.704,
+      "USL_proxy": 73.467,
+      "n": 1096,
+      "mean": 27.952,
+      "sigma_within": 11.162,
+      "sigma_overall": 13.064,
+      "Cp": 0.952,
+      "Cpk": 0.545,
+      "Pp": 0.813,
+      "Ppk": 0.466,
+      "Cp_pct": 0.627,
+      "Cpk_pct": 0.571,
+      "AD_stat": 27.686,
+      "normal_AD_5pct": false,
+      "Cpk_pm4sigma_spec": 1.337,
+      "Ppk_pm4sigma_spec": 1.142,
+      "in_control": false,
+      "Pp_vs_unchanged_ref": 0.947,
+      "AIAG_band_proxy_specs": "not capable (<1.00)"
+    },
+    {
+      "sensor": "S129",
+      "role": "predictor",
+      "LSL_proxy": -0.993,
+      "USL_proxy": 1.608,
+      "n": 1094,
+      "mean": -0.809,
+      "sigma_within": 0.525,
+      "sigma_overall": 1.34,
+      "Cp": 0.825,
+      "Cpk": 0.117,
+      "Pp": 0.324,
+      "Ppk": 0.046,
+      "Cp_pct": 0.417,
+      "Cpk_pct": 0.157,
+      "AD_stat": 36.003,
+      "normal_AD_5pct": false,
+      "Cpk_pm4sigma_spec": 0.199,
+      "Ppk_pm4sigma_spec": 0.078,
+      "in_control": false,
+      "Pp_vs_unchanged_ref": 0.377,
+      "AIAG_band_proxy_specs": "not capable (<1.00)"
+    },
+    {
+      "sensor": "S482",
+      "role": "control",
+      "LSL_proxy": 0.0,
+      "USL_proxy": 956.629,
+      "n": 1073,
+      "mean": 325.273,
+      "sigma_within": 299.371,
+      "sigma_overall": 288.77,
+      "Cp": 0.533,
+      "Cpk": 0.362,
+      "Pp": 0.552,
+      "Ppk": 0.375,
+      "Cp_pct": 0.959,
+      "Cpk_pct": 0.941,
+      "AD_stat": 33.396,
+      "normal_AD_5pct": false,
+      "Cpk_pm4sigma_spec": 1.107,
+      "Ppk_pm4sigma_spec": 1.148,
+      "in_control": true,
+      "Pp_vs_unchanged_ref": 0.643,
+      "AIAG_band_proxy_specs": "not capable (<1.00)"
+    },
+    {
+      "sensor": "S223",
+      "role": "control",
+      "LSL_proxy": 39.629,
+      "USL_proxy": 220.716,
+      "n": 1097,
+      "mean": 123.517,
+      "sigma_within": 36.766,
+      "sigma_overall": 36.771,
+      "Cp": 0.821,
+      "Cpk": 0.761,
+      "Pp": 0.821,
+      "Ppk": 0.76,
+      "Cp_pct": 0.861,
+      "Cpk_pct": 0.734,
+      "AD_stat": 5.687,
+      "normal_AD_5pct": false,
+      "Cpk_pm4sigma_spec": 1.438,
+      "Ppk_pm4sigma_spec": 1.437,
+      "in_control": true,
+      "Pp_vs_unchanged_ref": 0.956,
+      "AIAG_band_proxy_specs": "not capable (<1.00)"
+    }
+  ],
+  "spc_linkage": [
+    {
+      "sensor": "S059",
+      "role": "predictor",
+      "phase2_points": 1090,
+      "flagged_points": 1063,
+      "flagged_pct": 0.9752,
+      "R1_points": 1,
+      "R2_points": 1062,
+      "R3_points": 13,
+      "R4_points": 19,
+      "fail_rate_flagged": 0.0386,
+      "fail_rate_not_flagged": 0.1852,
+      "mr_above_ucl": 2
+    },
+    {
+      "sensor": "S021",
+      "role": "predictor",
+      "phase2_points": 1096,
+      "flagged_points": 424,
+      "flagged_pct": 0.3869,
+      "R1_points": 2,
+      "R2_points": 385,
+      "R3_points": 31,
+      "R4_points": 29,
+      "fail_rate_flagged": 0.0613,
+      "fail_rate_not_flagged": 0.0298,
+      "mr_above_ucl": 4
+    },
+    {
+      "sensor": "S460",
+      "role": "predictor",
+      "phase2_points": 1096,
+      "flagged_points": 249,
+      "flagged_pct": 0.2272,
+      "R1_points": 14,
+      "R2_points": 190,
+      "R3_points": 24,
+      "R4_points": 31,
+      "fail_rate_flagged": 0.0482,
+      "fail_rate_not_flagged": 0.0401,
+      "mr_above_ucl": 22
+    },
+    {
+      "sensor": "S129",
+      "role": "predictor",
+      "phase2_points": 1094,
+      "flagged_points": 750,
+      "flagged_pct": 0.6856,
+      "R1_points": 455,
+      "R2_points": 657,
+      "R3_points": 0,
+      "R4_points": 17,
+      "fail_rate_flagged": 0.0387,
+      "fail_rate_not_flagged": 0.0494,
+      "mr_above_ucl": 192
+    },
+    {
+      "sensor": "S482",
+      "role": "control",
+      "phase2_points": 1073,
+      "flagged_points": 43,
+      "flagged_pct": 0.0401,
+      "R1_points": 0,
+      "R2_points": 9,
+      "R3_points": 6,
+      "R4_points": 28,
+      "fail_rate_flagged": 0.0465,
+      "fail_rate_not_flagged": 0.0427,
+      "mr_above_ucl": 16
+    },
+    {
+      "sensor": "S223",
+      "role": "control",
+      "phase2_points": 1097,
+      "flagged_points": 48,
+      "flagged_pct": 0.0438,
+      "R1_points": 6,
+      "R2_points": 13,
+      "R3_points": 12,
+      "R4_points": 17,
+      "fail_rate_flagged": 0.0208,
+      "fail_rate_not_flagged": 0.0429,
+      "mr_above_ucl": 6
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+sensor,role,phase2_points,flagged_points,flagged_pct,R1_points,R2_points,R3_points,R4_points,fail_rate_flagged,fail_rate_not_flagged,mr_above_ucl
+S059,predictor,1090,1063,0.9752,1,1062,13,19,0.0386,0.1852,2
+S021,predictor,1096,424,0.3869,2,385,31,29,0.0613,0.0298,4
+S460,predictor,1096,249,0.2272,14,190,24,31,0.0482,0.0401,22
+S129,predictor,1094,750,0.6856,455,657,0,17,0.0387,0.0494,192
+S482,control,1073,43,0.0401,0,9,6,28,0.0465,0.0427,16
+S223,control,1097,48,0.0438,6,13,12,17,0.0208,0.0429,6
