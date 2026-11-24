@@ -154,3 +154,7 @@ The SPC and capability code uses no SPC library, so every number traces back to 
 - Proxy specs make capability a comparison against the baseline period, not against what the customer needs.
 - 104 fails is a small sample. Only the S059 ranking is stable across bootstraps.
 - Labels are a single pass/fail at line test, with no fail mode.
+
+## Data source
+
+SECOM dataset by Michael McCann and Adrian Johnston, from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/179/secom), licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). The files in `data/raw/` are unmodified copies.
