@@ -4,3 +4,7 @@ __pycache__/
 .pytest_cache/
 reports/run_log.txt
 .DS_Store
+
+# personal resume/interview notes (kept locally, not published)
+PROJECT_SUMMARY.md
+RESUME_KIT.md
